@@ -1,0 +1,20 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Secrets and local state
+.env
+session.json
+data/state.db
+tmp/
+data/bot.lock
+data/style.md
+data/style.before-import.md
+.DS_Store

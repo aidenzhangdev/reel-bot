@@ -1,0 +1,24 @@
+[project]
+name = "reel-bot"
+version = "0.1.0"
+description = "Instagram bot that reacts to Reels friends DM it, in my texting style"
+requires-python = ">=3.12"
+dependencies = [
+    "google-genai>=2.32.0",
+    "instagrapi>=3.1.0",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+reel-bot = "reel_bot.main:main"
+try-reel = "reel_bot.try_reel:main"
+import-style = "reel_bot.import_style:main"
+
+[build-system]
+requires = ["uv_build>=0.13.4,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
